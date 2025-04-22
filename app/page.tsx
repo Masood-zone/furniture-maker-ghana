@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -29,11 +29,14 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
           <div className="text-center text-white px-4">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">God is Good Furnitures</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6">
+              God is Good Furnitures
+            </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-              Handcrafted Ghanaian furniture that tells a story of tradition, quality, and beauty
+              Handcrafted Ghanaian furniture that tells a story of tradition,
+              quality, and beauty
             </p>
-            <Link 
+            <Link
               href="/shop"
               className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full transition"
             >
@@ -46,7 +49,9 @@ export default function Home() {
       {/* Featured Products */}
       <div className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Featured Products</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Featured Products
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Featured Product 1 */}
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
@@ -61,7 +66,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Dining Set</h3>
                 <p className="text-amber-600 mb-4">$550</p>
-                <Link 
+                <Link
                   href="/shop"
                   className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-6 rounded-full transition"
                 >
@@ -83,7 +88,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Sofa Set</h3>
                 <p className="text-amber-600 mb-4">$680</p>
-                <Link 
+                <Link
                   href="/shop"
                   className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-6 rounded-full transition"
                 >
@@ -95,7 +100,7 @@ export default function Home() {
             {/* Featured Product 3 */}
             <div className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="relative h-64">
-            <Image
+                <Image
                   src="/images/traditional chair.jpg"
                   alt="Traditional Chair"
                   fill
@@ -103,9 +108,11 @@ export default function Home() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Traditional Chair</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Traditional Chair
+                </h3>
                 <p className="text-amber-600 mb-4">GHC 1,200</p>
-                <Link 
+                <Link
                   href="/shop"
                   className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-6 rounded-full transition"
                 >
@@ -120,7 +127,9 @@ export default function Home() {
       {/* Testimonials Section */}
       <div className="bg-blue-50 py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            What Our Customers Say
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Testimonial 1 */}
             <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -139,7 +148,8 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600">
-                &quot;The quality of craftsmanship is exceptional. My custom dining table is the centerpiece of our home.&quot;
+                &quot;The quality of craftsmanship is exceptional. My custom
+                dining table is the centerpiece of our home.&quot;
               </p>
             </div>
 
@@ -147,7 +157,7 @@ export default function Home() {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden">
-          <Image
+                  <Image
                     src="/images/avatars/ama.jpg"
                     alt="Ama Serwaa"
                     fill
@@ -160,7 +170,8 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600">
-                &quot;I love how they combine traditional Ghanaian designs with modern functionality. Truly unique pieces!&quot;
+                &quot;I love how they combine traditional Ghanaian designs with
+                modern functionality. Truly unique pieces!&quot;
               </p>
             </div>
 
@@ -168,7 +179,7 @@ export default function Home() {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden">
-          <Image
+                  <Image
                     src="/images/avatars/kwame.jpg"
                     alt="Kwame Boateng"
                     fill
@@ -181,7 +192,8 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600">
-                &quot;The attention to detail is remarkable. Every piece tells a story of Ghana&apos;s rich woodworking heritage.&quot;
+                &quot;The attention to detail is remarkable. Every piece tells a
+                story of Ghana&apos;s rich woodworking heritage.&quot;
               </p>
             </div>
           </div>
@@ -193,14 +205,19 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Stay Updated</h2>
           <p className="text-gray-600 mb-8">
-            Subscribe to our newsletter for the latest collections, special offers, and woodworking insights.
+            Subscribe to our newsletter for the latest collections, special
+            offers, and woodworking insights.
           </p>
           {isSubscribed ? (
             <div className="bg-green-100 text-green-800 p-4 rounded-lg">
-              Thank you for subscribing! We'll keep you updated with our latest news.
+              Thank you for subscribing! We&lsquo;ll keep you updated with our
+              latest news.
             </div>
           ) : (
-            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <form
+              onSubmit={handleSubscribe}
+              className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
+            >
               <input
                 type="email"
                 value={email}
@@ -223,10 +240,12 @@ export default function Home() {
       {/* Process Showcase */}
       <div className="bg-blue-50 py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Craftsmanship Process</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Our Craftsmanship Process
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="relative h-96 rounded-lg overflow-hidden">
-          <Image
+              <Image
                 src="/images/process.jpg"
                 alt="Furniture making process"
                 fill
@@ -234,13 +253,16 @@ export default function Home() {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Traditional Techniques</h3>
+              <h3 className="text-2xl font-semibold mb-4">
+                Traditional Techniques
+              </h3>
               <p className="text-blue-600 mb-6">
-                Each piece of furniture we create is a testament to Ghana&apos;s rich woodworking heritage. 
-                Our process combines traditional techniques with modern craftsmanship to create unique, 
+                Each piece of furniture we create is a testament to Ghana&apos;s
+                rich woodworking heritage. Our process combines traditional
+                techniques with modern craftsmanship to create unique,
                 high-quality pieces that tell a story.
               </p>
-              <Link 
+              <Link
                 href="/process"
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition"
               >
